@@ -11,8 +11,8 @@ public class MyController {
   //================================================================
   // HELLO
   //================================================================
-  @RequestMapping("Hello")
-  String hello(@RequestBody PersonDTO personDTO) {
+  @RequestMapping("AddPerson")
+  String AddPerson(@RequestBody PersonDTO personDTO) {
     return personDTO.name + " is " + personDTO.age + " years old";
   }
 
